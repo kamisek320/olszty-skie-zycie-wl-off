@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Shot | Olsztyńskie wl-off</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fractions.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏙️ Olsztyńskie wl-off</h1>
+            </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">← Powrót</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fraction Header -->
+    <section class="fraction-header">
+        <div class="fraction-header-content">
+            <div class="fraction-icon-large">🍔</div>
+            <h1>Burger Shot</h1>
+            <p>Fastfood i Gastronomia</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="fraction-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="content-column">
+                    <h2>O Frakcji</h2>
+                    <p>
+                        Burger Shot to sieć fastfoodir znana z pysznych burgerów, frytek i napojów. Pracownicy zajmują się 
+                        przygotowaniem jedzenia, obsługą klientów i zarządzaniem restauracją. To dynamiczna frakcja dla tych, 
+                        którzy lubiąpracować w restauracji!
+                    </p>
+
+                    <h2>Stanowiska</h2>
+                    </div>
+
+                    <div class="discord-box">
+                    <ul class="position-list">
+                        <li>🎖️ Manager Restauracji</li>
+                        <button class="btn btn-primary" onclick="openDiscord()">Przejdź do Discord</button>
+                        <li>👤 Pracownik Kuchni</li>
+                        <li>🍔 Pracownik Frontu (Kasa)</li>
+                    </ul>
+                
+                </div>
+
+                <!-- Right Column -->
+                <div class="content-column">
+                    
+
+                    <div class="obowiązki-box">
+                        <h3>Główne Obowiązki</h3>
+                        <ul>
+                            <li>🍔 Przygotowanie burgerów i potraw</li>
+                            <li>🍟 Przygotowanie frytek i dodatków</li>
+                            <li>💼 Obsługa kas i płatności</li>
+                            <li>📦 Pakowanie zamówień</li>
+                            <li>🧹 Utrzymanie czystości</li>
+                        </ul>
+                    </div>
+
+                    <div class="discord-box">
+                        <h3>Dołącz do nas!</h3>
+                        <p>Chcesz pracować w naszej restauracji? Dołącz do Burger Shot!</p>
+                        <input type="text" id="discordLink" class="discord-input" placeholder="Wpisz link do Discord Burger Shot" value="">
+                        <button class="btn btn-primary" onclick="openDiscord()">Przejdź do Discord</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Olsztyńskie wl-off | FiveM Server. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function openDiscord() {
+            const link = document.getElementById('discordLink').value;
+            if (link) {
+                window.open(link, '_blank');
+            } else {
+                alert('Procę zmienić link do Discord\'a w kodzie!');
+            }
+        }
+    </script>
+</body>
+</html>

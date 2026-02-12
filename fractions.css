@@ -1,0 +1,237 @@
+/* ===== FRACTION PAGES STYLES ===== */
+
+/* ===== FRACTION HEADER ===== */
+.fraction-header {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.fraction-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+}
+
+.fraction-header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.fraction-icon-large {
+    font-size: 5rem;
+    display: block;
+    margin-bottom: 1rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.fraction-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--light-text);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.fraction-header p {
+    font-size: 1.3rem;
+    color: #ddd;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== FRACTION CONTENT ===== */
+.fraction-content {
+    padding: 4rem 0;
+    background-color: var(--dark-bg);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.content-column h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.content-column h2:first-child {
+    margin-top: 0;
+}
+
+.content-column p {
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* ===== POSITION & REQUIREMENT LISTS ===== */
+.position-list,
+.requirements-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.position-list li,
+.requirements-list li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #aaa;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.position-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.requirements-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.position-list li:last-child,
+.requirements-list li:last-child {
+    border-bottom: none;
+}
+
+/* ===== INFO BOXES ===== */
+.info-box,
+.obowiązki-box,
+.discord-box {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(0, 78, 137, 0.1) 100%);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-box h3,
+.obowiązki-box h3,
+.discord-box h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.info-box ul,
+.obowiązki-box ul {
+    list-style: none;
+}
+
+.info-box li,
+.obowiązki-box li {
+    padding: 0.6rem 0;
+    color: #aaa;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.info-box li:last-child,
+.obowiązki-box li:last-child {
+    border-bottom: none;
+}
+
+.info-box strong,
+.obowiązki-box strong {
+    color: var(--primary-color);
+}
+
+/* ===== DISCORD BOX ===== */
+.discord-box {
+    text-align: center;
+    border-color: var(--primary-color);
+}
+
+.discord-box p {
+    margin-bottom: 1.5rem;
+    color: #bbb;
+}
+
+.discord-input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: rgba(15, 15, 15, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--light-text);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.discord-input:focus {
+    outline: none;
+    background-color: rgba(15, 15, 15, 0.8);
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+}
+
+.discord-input::placeholder {
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .fraction-header {
+        padding: 3rem 0;
+    }
+
+    .fraction-header h1 {
+        font-size: 2rem;
+    }
+
+    .fraction-header p {
+        font-size: 1rem;
+    }
+
+    .fraction-icon-large {
+        font-size: 3rem;
+    }
+
+    .content-column h2 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .info-box,
+    .obowiązki-box,
+    .discord-box {
+        padding: 1.5rem;
+    }
+
+    .position-list li,
+    .requirements-list li {
+        font-size: 0.9rem;
+    }
+}

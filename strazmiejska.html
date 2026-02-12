@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM - Straż Miejska | Olsztyńskie wl-off</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fractions.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏙️ Olsztyńskie wl-off</h1>
+            </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">← Powrót</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fraction Header -->
+    <section class="fraction-header">
+        <div class="fraction-header-content">
+            <div class="fraction-icon-large">🦺</div>
+            <h1>SM - Straż Miejska</h1>
+            <p>Straż Miejska Miasta</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="fraction-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="content-column">
+                    <h2>O Frakcji</h2>
+                    <p>
+                        Straż Miejska to służba publiczna odpowiadająca za ochronę mienia publicznego, egzekucję 
+                        przepisów porządkowych oraz ochronę bezpieczeństwa w przestrzeni publicznej. Strażnicy pracują 
+                        w terenie, sprawdzając zgodność z przepisami prawa lokalnego i dbając o porządek publiczny.
+                    </p>
+
+                    <h2>Stanowiska</h2>
+                    <ul class="position-list">
+                        <li>🎖️ Komendant Straży Miejskiej</li>
+                        <li>⭐ Starszy Inspektor</li>
+                        <li>👮 Inspektor</li>
+                        <li>🦺 Starszy Strażnik</li>
+                        <li>👤 Strażnik Miejski</li>
+                    </ul>
+                
+                </div>
+
+                <!-- Right Column -->
+                <div class="content-column">
+                    
+
+                    <div class="obowiązki-box">
+                        <h3>Główne Obowiązki</h3>
+                        <ul>
+                            <li>🚨 Patrole porządkowe</li>
+                            <li>📋 Sprawdzanie zgodności z przepisami</li>
+                            <li>🚫 Nakładanie kar za naruszenia</li>
+                            <li>🏛️ Ochrona budynków publicznych</li>
+                            <li>🚸 Bezpieczeństwo w przestrzeni publicznej</li>
+                        </ul>
+                    </div>
+
+                    <div class="discord-box">
+                        <h3>Dołącz do nas!</h3>
+                        <p>Chcesz dbać o porządek publiczny? Dołącz do Straży Miejskiej!</p>
+                        <button class="btn btn-primary" onclick="openDiscord('https://discord.gg/yQDy4DVjXW')">Przejdź do Discord</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Olsztyńskie wl-off | FiveM Server. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function openDiscord(link) {
+            if (link) {
+                window.open(link, '_blank');
+            } else {
+                alert('Link do Discorda nie został jeszcze ustawiony.');
+            }
+        }
+    </script>
+</body>
+</html>
