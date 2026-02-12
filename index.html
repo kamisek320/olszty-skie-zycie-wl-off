@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olsztyńskie wl-off | FiveM Server</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🏙️ Olsztyńskie wl-off</h1>
+                <p class="tagline">FiveM Server</p>
+            </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Strona Główna</a></li>
+                <li><a href="#about" class="nav-link">O Serwerze</a></li>
+                <li><a href="#fractions" class="nav-link">Frakcje</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Witaj na Olsztyńskim wl-off</h2>
+            <p>Doświadcz najlepszego FiveM serwera Roleplay w Polsce!</p>
+            <button class="btn btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Dowiedz się więcej</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>O Naszym Serwerze</h2>
+            <div class="about-content">
+                <p>
+                    Olsztyńskie wl-off to zaawansowany serwer FiveM stawiający na realistyczne i angażujące doświadczenie
+                    roleplay. Tworzymy społeczność, która ceni sobie porządek, współpracę oraz kreatywność w odgrywaniu ról.
+                </p>
+
+                <h3>Co znajdziesz na serwerze</h3>
+                <ul class="features">
+                    <li>✅ Rozbudowane frakcje z pełną hierarchią i zadaniami</li>
+                    <li>✅ Realistyczny system ekonomii, gospodarki i usług</li>
+                    <li>✅ Wydarzenia specjalne i regularne eventy community</li>
+                    <li>✅ Systemy służb (medyczne, policyjne, pożarne, mechaniczne)</li>
+                    <li>✅ Skrypty i mechaniki dostosowane do RB (roleplay)</li>
+                </ul>
+
+                <h3>Jak dołączyć</h3>
+                <p>
+                    Aby dołączyć, odwiedź nasz serwer Discord (przycisk w sekcji Kontakt) — tam znajdziesz aktualne
+                    informacje o rekrutacji, kanały rekrutacyjne oraz instrukcje wejścia na serwer.
+                </p>
+
+                <h3>Społeczność</h3>
+                <p>
+                    Nasz zespół administracyjny moderuje serwer i dba o uczciwe prowadzenie rozgrywki.
+                </p>
+
+                <h3>Kontakt i wsparcie</h3>
+                <p>
+                    Masz pytania techniczne lub chcesz zgłosić problem? Dołącz do Discorda serwera i zgłoś sprawę na
+                    kanale pomocy — nasz zespół postara się odpowiedzieć najszybciej jak to możliwe.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fractions Section -->
+    <section id="fractions" class="fractions">
+        <div class="container">
+            <h2>Frakcje</h2>
+            <div class="fractions-grid">
+                <div class="fraction-card" data-page="ems" onclick="location.href='src/pages/ems.html'" style="cursor:pointer">
+                    <div class="fraction-icon">🚑</div>
+                    <h3>EMS - Pogotowie</h3>
+                    <p>Ratownictwo medyczne i opieka zdrowotna</p>
+                    <a href="src/pages/ems.html" class="btn btn-secondary" aria-label="EMS">EMS</a>
+                </div>
+
+                <div class="fraction-card" data-page="police" onclick="location.href='src/pages/police.html'" style="cursor:pointer">
+                    <div class="fraction-icon">👮</div>
+                    <h3>KWP - Policja</h3>
+                    <p>Utrzymanie porządku i bezpieczeństwa publicznego</p>
+                    <a href="src/pages/police.html" class="btn btn-secondary" aria-label="KWP - Policja">KWP</a>
+                </div>
+
+                <div class="fraction-card" data-page="strazmiejska" onclick="location.href='src/pages/strazmiejska.html'" style="cursor:pointer">
+                    <div class="fraction-icon">🦺</div>
+                    <h3>SM - Straż Miejska</h3>
+                    <p>Kontrola i egzekucja przepisów lokalnych</p>
+                    <a href="src/pages/strazmiejska.html" class="btn btn-secondary" aria-label="SM - Straż Miejska">SM</a>
+                </div>
+
+                <div class="fraction-card" data-page="strazpozarna" onclick="location.href='src/pages/strazpozarna.html'" style="cursor:pointer">
+                    <div class="fraction-icon">🚒</div>
+                    <h3>PSP - Straż Pożarna</h3>
+                    <p>Gaszenie pożarów i ratownictwo techniczne</p>
+                    <a href="src/pages/strazpozarna.html" class="btn btn-secondary" aria-label="PSP - Straż Pożarna">PSP</a>
+                </div>
+
+                <div class="fraction-card" data-page="mechanic" onclick="location.href='src/pages/mechanic.html'" style="cursor:pointer">
+                    <div class="fraction-icon">🔧</div>
+                    <h3>Mechanicy</h3>
+                    <p>Naprawa i konserwacja pojazdów</p>
+                    <a href="src/pages/mechanic.html" class="btn btn-secondary" aria-label="Mechanicy">MECHANICY</a>
+                </div>
+
+                <div class="fraction-card" data-page="uwucafe" onclick="location.href='src/pages/uwucafe.html'" style="cursor:pointer">
+                    <div class="fraction-icon">☕</div>
+                    <h3>UwuCafe</h3>
+                    <p>Kawiarnia i bar serwu</p>
+                    <a href="src/pages/uwucafe.html" class="btn btn-secondary" aria-label="UwuCafe">UWU</a>
+                </div>
+
+                <div class="fraction-card" data-page="burgershot" onclick="location.href='src/pages/burgershot.html'" style="cursor:pointer">
+                    <div class="fraction-icon">🍔</div>
+                    <h3>Burger Shot</h3>
+                    <p>Fastfood i gastronomia</p>
+                    <a href="src/pages/burgershot.html" class="btn btn-secondary" aria-label="Burger Shot">BS</a>
+                </div>
+                
+                <div class="fraction-card" data-page="crime" onclick="location.href='src/pages/crime.html'" style="cursor:pointer">
+                    <div class="fraction-icon">🕵️‍♂️</div>
+                    <h3>Crime</h3>
+                    <p>Frakcje przestępcze i aktywności kryminalne</p>
+                    <a href="src/pages/crime.html" class="btn btn-secondary" aria-label="Crime">CRIME</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+                <div class="contact-content">
+                <p>Masz pytania? Poddaj się naszej społeczności na Discordzie!</p>
+                <a href="https://discord.gg/zYYhUFHTAy" class="btn btn-secondary" target="_blank" rel="noopener">Discord Serwera</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Olsztyńskie wl-off | FiveM Server. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" aria-label="Przewiń do góry">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 15l6-6 6 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
